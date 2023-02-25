@@ -1,0 +1,218 @@
+:root {
+  --clr-primary-100: linear-gradient(to bottom right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --clr-secondry-100: hsl(240, 78%, 98%);
+  --clr-secondry-200: hsl(234, 14%, 74%);
+  --clr-secondry-300: hsl(233, 13%, 49%);
+  --clr-secondry-400: hsl(232, 13%, 33%);
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--clr-secondry-100);
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 40px;
+  background: url(/app/assets/images/bg-top.svg), url(/app/assets/images/bg-bottom.svg);
+  background-position: right, left bottom;
+  background-repeat: no-repeat;
+}
+.main__title {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--clr-secondry-300);
+}
+.main__toggler-container {
+  margin-inline: auto;
+  margin: 30px auto;
+  color: var(--clr-secondry-200);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 200;
+  text-align: center;
+  justify-content: center;
+}
+.main__toggler-container .toggler {
+  width: 40px;
+  height: 25px;
+  border-radius: 100vh;
+  background-image: var(--clr-primary-100);
+  cursor: pointer;
+  border: 0;
+  position: relative;
+}
+.main__toggler-container .toggler .circle {
+  height: 19px;
+  width: 19px;
+  background-color: var(--clr-secondry-100);
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.4s;
+}
+.main__toggler-container .toggler .circle.monthly {
+  transform: translateX(90%);
+}
+.main__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 55em) {
+  .main__cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.main__card {
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  width: 300px;
+  box-shadow: 1px 1px 10px -4px var(--clr-secondry-200);
+  border-radius: 10px;
+  display: grid;
+}
+.main__card__title {
+  color: var(--clr-secondry-300);
+  margin: 15px 0;
+}
+.main__card__price {
+  font-size: 2.7rem;
+  margin: 10px 0;
+  color: var(--clr-secondry-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main__card__price .dollar-sign {
+  font-size: 1.6rem;
+  margin-right: 5px;
+}
+.main__card__info {
+  color: var(--clr-secondry-300);
+  margin: 10px 0;
+  padding: 0;
+}
+.main__card__info li {
+  padding: 15px;
+  border-top: 1px solid var(--clr-secondry-200);
+}
+.main__card__send {
+  border-bottom: 1px solid var(--clr-secondry-200);
+  margin-bottom: 15px;
+}
+
+.main__professional {
+  height: 460px;
+  background-image: var(--clr-primary-100);
+}
+.main__professional .main__card__title {
+  color: var(--clr-secondry-100);
+}
+.main__professional .main__card__price {
+  color: var(--clr-secondry-100);
+}
+.main__professional .main__card__info {
+  color: var(--clr-secondry-100);
+}
+
+.btn {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid transparent;
+  background-image: var(--clr-primary-100);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--clr-secondry-100);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn:hover {
+  border: 1px solid hsl(237, 63%, 64%);
+  background-image: none;
+  color: var(--clr-secondry-400);
+  background-color: transparent;
+}
+.btn.btn-white {
+  background-color: var(--clr-secondry-100);
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+}
+.btn.btn-white:hover {
+  background-color: transparent;
+  border: 1px solid var(--clr-secondry-100);
+  color: var(--clr-secondry-100);
+}/*# sourceMappingURL=style.css.map */

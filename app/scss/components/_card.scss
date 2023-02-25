@@ -1,0 +1,52 @@
+.main__card {
+    padding:10px 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 1px 1px 10px -4px var(--clr-secondry-200);
+    border-radius: 10px;
+    display: grid;
+    &__title {
+        color: var(--clr-secondry-300);
+        margin: 15px 0;
+    }
+    &__price {
+        font-size: 2.7rem;
+        margin: 10px 0;
+        color: var(--clr-secondry-400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .dollar-sign {
+            font-size: 1.6rem;
+            margin-right: 5px;
+        }
+    }
+    &__info {
+        color: var(--clr-secondry-300);
+        margin: 10px 0;
+        padding: 0;
+        li {
+            padding: 15px;
+            border-top: 1px solid var(--clr-secondry-200);
+        }
+    }
+    &__send {
+        border-bottom:1px solid var(--clr-secondry-200);
+        margin-bottom: 15px;
+    }
+}
+.main__professional {
+    height: 460px;
+    background-image: var(--clr-primary-100);
+
+    .main__card__title {
+        color: var(--clr-secondry-100);
+    }
+    .main__card__price {
+        color: var(--clr-secondry-100);
+    }
+    .main__card__info {
+        color: var(--clr-secondry-100);
+    }
+}

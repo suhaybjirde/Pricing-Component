@@ -1,0 +1,16 @@
+@use 'colors' as *;
+@use 'breakpoints' as *;
+
+@mixin ganerate-colors() {
+    @each $name, $shades in $colors {
+        @each $number, $color in $shades {
+            --clr-#{$name}-#{$number}: #{$color};
+        }
+    }
+}
+
+@mixin media-small() {
+    @media (max-width: map-get($breakpoint, small)) {
+        @content
+    }
+}
