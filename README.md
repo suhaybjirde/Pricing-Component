@@ -6,8 +6,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [=>](https://www.frontendmentor.io/solutions/pricing-component-with-toggle-with-html-and-scss-cmUmTvaTlH)
+- Live Site URL: [=>](https://benevolent-crepe-69f2f6.netlify.app)
 ## Author
 
 
