@@ -6,6 +6,15 @@
     background: url(/app/assets/images/bg-top.svg), url(/app/assets/images/bg-bottom.svg);
     background-position: right, left bottom;
     background-repeat: no-repeat;
+
+    @include media-small {
+        background: url(/app/assets/images/bg-top.svg);
+        background-repeat: no-repeat;
+        background-position: 550% -10%;
+        background-size: 400px;
+        padding-bottom: 20px;
+    }
+
     &__title {
         font-size: 2rem;
         text-align: center;

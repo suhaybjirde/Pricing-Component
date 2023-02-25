@@ -82,6 +82,15 @@ body {
   background-position: right, left bottom;
   background-repeat: no-repeat;
 }
+@media (max-width: 55em) {
+  .main {
+    background: url(/app/assets/images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: 550% -10%;
+    background-size: 400px;
+    padding-bottom: 20px;
+  }
+}
 .main__title {
   font-size: 2rem;
   text-align: center;
