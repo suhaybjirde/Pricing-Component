@@ -2,51 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="app/assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="disc/style.css">
+  <title>Pricing Component</title>
 </head>
 <body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="main">
+    <h1 class="main__title">Our Pricing</h1>
+    <div class="main__toggler-container">
+      <span>Annually</span>
+      <button class="toggler"><span class="circle"></span></button>
+      <span>Monthly</span>
+    </div>
+    <div class="main__cards">
+      <section class="main__card main__basic">
+        <p class="main__card__title">Basic</p>
+        <h2 class="main__card__price">&dollar;199.99</h2>
+        <div class="main__card__info">
+          <p class="main__card__storage">500 GB Storage</p>
+          <p class="main__card__users">2 Users Allowed</p>
+          <p class="main__card__send">Send up to 3 GB</p>
+          <button class="btn btn-blue">Learn More</button>
+        </div>
+      </section>
+      <section class="main__card main__professional">
+        <p class="main__card__title">Professional</p>
+        <h2 class="main__card__price">&dollar;249.99</h2>
+        <div class="main__card__info">
+          <p class="main__card__storage">1 TB Storage</p>
+          <p class="main__card__users">5 Users Allowed</p>
+          <p class="main__card__send">Send up to 5 GB</p>
+          <button class="btn btn-white">Learn More</button>
+        </div>
+      </section>
+      <section class="main__card main__master">
+        <p class="main__card__title">Master</p>
+        <h2 class="main__card__price">&dollar;399.99</h2>
+        <div class="main__card__info">
+          <p class="main__card__storage">2 TB Storage</p>
+          <p class="main__card__users">10 Users Allowed</p>
+          <p class="main__card__send">Send up to 20 GB</p>
+          <button class="btn btn-blue">Learn More</button>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="app/js/script.js"></script>
 </body>
 </html>
